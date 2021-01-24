@@ -30,3 +30,17 @@ This does a couple of things:
 ## contributing
 
 You are very welcome to contribute!
+
+## credits
+
+This GitHub Action was inspired when reading 
+[Python in GitHub Actions](https://hynek.me/articles/python-github-actions/)
+by Hynek.
+
+Thanks a lot for your awesome blog posts!
+
+Also, I'd like to thank the developers of
+[build](https://github.com/pypa/build)
+and [twine](https://github.com/pypa/twine/).
+
+Thanks for spending your free time!
