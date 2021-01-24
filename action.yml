@@ -15,3 +15,6 @@ runs:
     - name: "Check long description"
       run: "python -m twine check dist/*"
       shell: bash
+branding:
+  icon: "check-circle"
+  color: "black"
