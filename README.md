@@ -10,7 +10,7 @@ name: Will it build?
 on:
   pull_request:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   will-it-build:
