@@ -1,2 +1,32 @@
 # will-it-build
-Build and verify a Python package
+
+a GitHub action to [build](https://pypi.org/project/build/) and verify a Python package
+
+## using this action
+
+```
+name: Will it build?
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  will-it-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+    - uses: jugmac00/will-it-build@main
+```
+
+This does a couple of things:
+- clones the code
+- installs Python
+- builds your Python package via [build](https://pypi.org/project/build/)
+- verifies the build via `python -m twine check dist/*`
+
+## contributing
+
+You are very welcome to contribute!
