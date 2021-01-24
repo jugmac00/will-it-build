@@ -2,6 +2,8 @@
 
 a GitHub action to [build](https://pypi.org/project/build/) and verify a Python package
 
+![CI](https://github.com/jugmac00/will-it-build/workflows/CI/badge.svg)
+
 ## using this action
 
 ```
