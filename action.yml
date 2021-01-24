@@ -1,0 +1,17 @@
+name: "Will it build?"
+description: "Build and check a Python package"
+runs:
+  using: "composite"
+  steps:
+    - name: "Install pypa/build and twine"
+      run: "python -m pip install build twine"
+      shell: bash
+    - name: "Build package"
+      run: "python -m build --sdist --wheel ."
+      shell: bash
+    - name: "Show build artifacts"
+      run: "ls -l dist"
+      shell: bash
+    - name: "Check long description"
+      run: "python -m twine check dist/*"
+      shell: bash
